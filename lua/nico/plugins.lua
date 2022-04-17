@@ -39,13 +39,23 @@ packer.init {
 }
 
 return packer.startup(function(use)
-  -- General plugins
+  -- Plugins without additional configuration
   use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install'} -- preview markdown
   use 'sbdchd/neoformat' -- formatter https://github.com/sbdchd/neoformahttps://github.com/sbdchd/neoformatt
-  use "kyazdani42/nvim-web-devicons"
+  use "kyazdani42/nvim-web-devicons" -- https://github.com/kyazdani42/nvim-web-devicons
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "wakatime/vim-wakatime" -- wakatime tracks my activity in https://wakatime.com/dashboard
+
+  -- autopairs
+  use 'windwp/nvim-autopairs' -- https://github.com/windwp/nvim-autopairs
+
+  -- bufferline
+  use {
+    'akinsho/nvim-bufferline.lua', -- https://github.com/akinsho/bufferline.nvim
+    tag = "*",
+    requires = 'kyazdani42/nvim-web-devicons'
+  }
 
   -- Colorschemes
   use "folke/tokyonight.nvim" -- https://github.com/folke/tokyonight.nvim
