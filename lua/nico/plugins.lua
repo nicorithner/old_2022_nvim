@@ -47,6 +47,8 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "wakatime/vim-wakatime" -- wakatime tracks my activity in https://wakatime.com/dashboard
 
+  -- Colorschemes
+  use "folke/tokyonight.nvim" -- https://github.com/folke/tokyonight.nvim
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
