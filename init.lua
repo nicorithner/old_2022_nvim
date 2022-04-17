@@ -10,7 +10,6 @@ end
 
 -- require plugins files
 require('nico.autopairs')
-require('nico.autosave')
 require('nico.bufferline')
 require('nico.colour')
 require('nico.colorizer')
