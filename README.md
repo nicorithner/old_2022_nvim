@@ -13,10 +13,10 @@ I will try be detail but avoid re-writing here what already is in the files. The
 - autopairs
 - keymaps
 - bufferline
+- nvim-tree
 
 **TO-DO**
 
-- nvim-tree
 - lualine
 - Gitsigns
 - LSP
