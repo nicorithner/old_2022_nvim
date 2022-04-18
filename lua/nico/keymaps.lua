@@ -31,3 +31,5 @@ map("n", "<leader>k", ":nohlsearch<CR>", opts)
 -- Markdown Preview
 map('n', '<leader>md', ':MarkdownPreviewToggle<CR>', term_opts)
 
+-- Nvimtree
+map("n", "<leader>n", ":NvimTreeToggle<cr>", opts)
