@@ -8,14 +8,15 @@ I will try be detail but avoid re-writing here what already is in the files. The
 
 ### Steps To Set Up
 
-- basic plugins and vim options
-- colorscheme
-- autopairs
-- keymaps
-- bufferline
-- nvim-tree
-- lualine
-- Gitsigns
+- Basic plugins and vim options
+- Colorscheme
+- Autopairs
+- Keymaps
+- [Bufferline](#bufferline)
+- [Nvim-tree](#nvim-tree)
+- [Lualine](#lualine)
+- [Gitsigns](#gitsigns)
+- [Vim-surround](#vim-surround)
 
 **TO-DO**
 
@@ -55,7 +56,8 @@ I will try be detail but avoid re-writing here what already is in the files. The
 ```
 
 <hr/>
-### Gitsigns
+
+## Gitsigns
 
 #### Plugins
 
