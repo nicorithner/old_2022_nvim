@@ -44,6 +44,7 @@ return packer.startup(function(use)
 	use("sbdchd/neoformat") -- formatter https://github.com/sbdchd/neoformahttps://github.com/sbdchd/neoformatt
 	use("kyazdani42/nvim-web-devicons") -- https://github.com/kyazdani42/nvim-web-devicons
 	use("wbthomason/packer.nvim") -- Have packer manage itself
+	use("nvim-lua/plenary.nvim") -- https://github.com/nvim-lua/plenary.nvim
 	use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
 	use("wakatime/vim-wakatime") -- wakatime tracks my activity in https://wakatime.com/dashboard
 
@@ -59,6 +60,14 @@ return packer.startup(function(use)
 
 	-- Colorschemes
 	use("folke/tokyonight.nvim") -- https://github.com/folke/tokyonight.nvim
+
+	-- Gitsigns
+	use({
+		"lewis6991/gitsigns.nvim", -- https://github.com/lewis6991/gitsigns.nvim
+		requires = {
+			"nvim-lua/plenary.nvim",
+		},
+	})
 
 	-- Lualine
 	use({

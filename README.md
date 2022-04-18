@@ -15,10 +15,10 @@ I will try be detail but avoid re-writing here what already is in the files. The
 - bufferline
 - nvim-tree
 - lualine
+- Gitsigns
 
 **TO-DO**
 
-- Gitsigns
 - LSP
 - Treesitter
 - Autocompletion
@@ -51,6 +51,23 @@ I will try be detail but avoid re-writing here what already is in the files. The
   map('n', '<S-TAB>', ':BufferLineCyclePrev<CR>', opts)
   map('n', 'm.', ':BufferLineMoveNext<CR>', opts)
   map('n', 'm,', ':BufferLineMovePrev<CR>', opts)
+```
+
+<hr/>
+### Gitsigns
+
+#### Plugins
+
+[gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+[plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
+
+```lua
+ use {
+   'lewis6991/gitsigns.nvim',
+   requires = {
+     'nvim-lua/plenary.nvim'
+   }
+ }
 ```
 
 <hr/>
