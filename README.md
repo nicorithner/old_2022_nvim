@@ -14,10 +14,10 @@ I will try be detail but avoid re-writing here what already is in the files. The
 - keymaps
 - bufferline
 - nvim-tree
+- lualine
 
 **TO-DO**
 
-- lualine
 - Gitsigns
 - LSP
 - Treesitter
