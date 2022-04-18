@@ -27,6 +27,7 @@ I will try be detail but avoid re-writing here what already is in the files. The
 - Lazygit
 - colorizer (colors hex)
 - comment
+- [Trouble.nvim](https://github.com/folke/trouble.nvim)
 
 ### Bufferline
 
@@ -110,6 +111,30 @@ use {
  use 'hrsh7th/cmp-nvim-lsp' -- https://github.com/hrsh7th/cmp-nvim-lsp
  use 'williamboman/nvim-lsp-installer' -- https://github.com/williamboman/nvim-lsp-installer
  use 'onsails/lspkind-nvim' -- https://github.com/onsails/lspkind-nvim
+```
+<hr/>
+
+### Vim-Surround
+
+[vim-surround](https://github.com/tpope/vim-surround)
+
+``` lua
+  use "tpope/vim-surround"
+```
+### Key bindings
+
+"hello world"
+
+- cs"' = 'hello world'
+- ds' = hello world
+- yss{ = { hello world } wraps the entire line with the curly braces
+- ysiw[ = [ hello ] world -> With the cursor on the word wraps that word
+- select word(s) <S + (> = (wraps selected text)
+
+It also works with HTML
+``` HTML
+  yss<div> = <div>wraps the whole line</div>
+  ysiw<span> = wraps the <span>word</span> the cursor is on
 ```
 
 <hr/>

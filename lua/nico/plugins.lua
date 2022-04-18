@@ -47,6 +47,7 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- https://github.com/nvim-lua/plenary.nvim
 	use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
 	use("wakatime/vim-wakatime") -- wakatime tracks my activity in https://wakatime.com/dashboard
+  use("tpope/vim-surround") -- changes surrounding quotes or brackets and more. https://github.com/tpope/vim-surround
 
 	-- autopairs
 	use("windwp/nvim-autopairs") -- https://github.com/windwp/nvim-autopairs
