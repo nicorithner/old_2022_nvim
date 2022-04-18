@@ -60,6 +60,15 @@ return packer.startup(function(use)
 	-- Colorschemes
 	use("folke/tokyonight.nvim") -- https://github.com/folke/tokyonight.nvim
 
+	-- Lualine
+	use({
+		"hoob3rt/lualine.nvim",
+		requires = {
+			"kyazdani42/nvim-web-devicons",
+			opt = true,
+		},
+	})
+
 	-- Nvim-tree
 	use({
 		"kyazdani42/nvim-tree.lua",
