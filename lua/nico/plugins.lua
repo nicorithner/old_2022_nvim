@@ -89,6 +89,13 @@ return packer.startup(function(use)
 		requires = "kyazdani42/nvim-web-devicons",
 	})
 
+  -- Telescope
+  use {
+  'nvim-telescope/telescope.nvim', -- https://github.com/nvim-telescope/telescope.nvim
+  requires = { {'nvim-lua/plenary.nvim'} }
+}
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' } -- https://github.com/nvim-telescope/telescope-fzf-native.nvim
+
 	-- Treesitter
 	use({"nvim-treesitter/nvim-treesitter", run = ':TSUpdate'}) -- https://github.com/nvim-treesitter/nvim-treesitter
 	use("nvim-treesitter/nvim-treesitter-refactor") -- https://github.com/nvim-treesitter/nvim-treesitter-refactor
