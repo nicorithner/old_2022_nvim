@@ -17,10 +17,10 @@ I will try be detail but avoid re-writing here what already is in the files. The
 - [Lualine](#lualine)
 - [Gitsigns](#gitsigns)
 - [Vim-surround](#vim-surround)
+- [LSP and LSP Installer](#lsp-and-lsp-installer)
 
 **TO-DO**
 
-- LSP
 - Treesitter
 - Autocompletion
 - telescope
@@ -102,27 +102,25 @@ use {
   }
 ```
 
-### LSP
+## LSP and LSP Installer
 
-[reddit article about changes dated april 17 2022](https://www.reddit.com/r/neovim/comments/u5si2w/breaking_changes_inbound_next_few_weeks_for/)
+Even though LSP (Language Server Protocol) is native in Neovim it requires quite a bit of set up.
+
+Use this guide [LSP-Guide]('/lua/nico/lsp/how-to-lsp.md')
 
 ```lua
- use 'hrsh7th/vim-vsnip' -- https://github.com/hrsh7th/vim-vsnip
- use 'neovim/nvim-lspconfig' -- https://github.com/neovim/nvim-lspconfig
- use 'hrsh7th/nvim-cmp' -- https://github.com/hrsh7th/nvim-cmp
- use 'hrsh7th/cmp-nvim-lsp' -- https://github.com/hrsh7th/cmp-nvim-lsp
- use 'williamboman/nvim-lsp-installer' -- https://github.com/williamboman/nvim-lsp-installer
- use 'onsails/lspkind-nvim' -- https://github.com/onsails/lspkind-nvim
+use 'neovim/nvim-lspconfig'
+use 'williamboman/nvim-lsp-installer'
 ```
-<hr/>
 
 ### Vim-Surround
 
 [vim-surround](https://github.com/tpope/vim-surround)
 
-``` lua
+```lua
   use "tpope/vim-surround"
 ```
+
 ### Key bindings
 
 "hello world"
@@ -134,7 +132,8 @@ use {
 - select word(s) <S + (> = (wraps selected text)
 
 It also works with HTML
-``` HTML
+
+```HTML
   yss<div> = <div>wraps the whole line</div>
   ysiw<span> = wraps the <span>word</span> the cursor is on
 ```
