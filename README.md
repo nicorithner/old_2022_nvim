@@ -18,10 +18,10 @@ I will try be detail but avoid re-writing here what already is in the files. The
 - [Gitsigns](#gitsigns)
 - [Vim-surround](#vim-surround)
 - [LSP and LSP Installer](#lsp-and-lsp-installer)
+- [ Treesitter ](#treesitter)
 
 **TO-DO**
 
-- Treesitter
 - Autocompletion
 - telescope
 - Toggle term
