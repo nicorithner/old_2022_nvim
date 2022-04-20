@@ -33,3 +33,9 @@ map('n', '<leader>md', ':MarkdownPreviewToggle<CR>', term_opts)
 
 -- Nvimtree
 map("n", "<leader>n", ":NvimTreeToggle<cr>", opts)
+
+-- Telescope
+map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
+map("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
+map("n", "<leader>fo", "<cmd>Telescope oldfiles<cr>", opts)
+map("n", "<leader>fgit", "<cmd>Telescope git_files<CR>", opts)

@@ -18,12 +18,12 @@ I will try be detail but avoid re-writing here what already is in the files. The
 - [Gitsigns](#gitsigns)
 - [Vim-surround](#vim-surround)
 - [LSP and LSP Installer](#lsp-and-lsp-installer)
-- [ Treesitter ](#treesitter)
+- [Telescope](#telescope)
+- [Treesitter](#treesitter)
 
 **TO-DO**
 
 - Autocompletion
-- telescope
 - Toggle term
 - Lazygit
 - colorizer (colors hex)
@@ -140,10 +140,29 @@ It also works with HTML
 
 <hr/>
 
-### Treesitter
+## Telescope
+
+[Link to Telescope docs](https://github.com/nvim-telescope/telescope.nvim)
+[Link to Telescope-fzf-native docs](https://github.com/nvim-telescope/telescope-fzf-native.nvim)
+
+``` lua
+  use {
+  'nvim-telescope/telescope.nvim',
+  requires = { {'nvim-lua/plenary.nvim'} }
+}
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' } 
+```
+
+<hr/>
+
+## Treesitter
+
+[Link to nvim-treesitter docs](https://github.com/nvim-treesitter/nvim-treesitter)
+[Link to treesitter-refactor docs](https://github.com/nvim-treesitter/nvim-treesitter-refactor)
+[Link to nvim-treesitter-endwise docs](https://github.com/RRethy/nvim-treesitter-endwise)
 
 ```lua
- use 'nvim-treesitter/nvim-treesitter' -- https://github.com/nvim-treesitter/nvim-treesitter
- use 'nvim-treesitter/nvim-treesitter-refactor' -- https://github.com/nvim-treesitter/nvim-treesitter-refactor
- use 'RRethy/nvim-treesitter-endwise' -- https://github.com/RRethy/nvim-treesitter-endwise
+ use 'nvim-treesitter/nvim-treesitter' 
+ use 'nvim-treesitter/nvim-treesitter-refactor'
+ use 'RRethy/nvim-treesitter-endwise'
 ```
