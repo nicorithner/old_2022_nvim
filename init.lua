@@ -11,6 +11,7 @@ end
 -- require plugins files
 require('nico.autopairs')
 require('nico.bufferline')
+require('nico.cmp')
 require('nico.colour')
 require('nico.colorizer')
 require('nico.colorscheme')
