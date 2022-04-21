@@ -21,16 +21,52 @@ I will try be detail but avoid re-writing here what already is in the files. The
 - [Telescope](#telescope)
 - [Treesitter](#treesitter)
 - [ToggleTerm](#toggleterm)
+- [ Autocompletion ](#autocompletion)
 
 **TO-DO**
 
-- Autocompletion
 - Lazygit
 - colorizer (colors hex)
 - comment
 - [Trouble.nvim](https://github.com/folke/trouble.nvim)
 
-### Bufferline
+<hr/>
+
+## Autocompletion
+
+### CMP Plugins
+
+* [Link to hrsh7th/nvim-cmp docs](https://github.com/hrsh7th/nvim-cmp)
+* [Link to hrsh7th/cmp-buffer docs](https://github.com/hrsh7th/cmp-buffer)
+* [Link to hrsh7th/cmp-path docs](https://github.com/hrsh7th/cmp-path)
+* [Link to hrsh7th/cmp-cmdline docs](https://github.com/hrsh7th/cmp-cmdline)
+* [Link to saadparwaiz1/cmp_luasnip docs](https://github.com/saadparwaiz1/cmp_luasnip)
+* [Link to hrsh7th/cmp-nvim-lsp docs](https://github.com/hrsh7th/cmp-nvim-lsp)
+* [Link to hrsh7th/cmp-nvim-lua docs](https://github.com/hrsh7th/cmp-nvim-lua)
+
+```lua
+  use "hrsh7th/nvim-cmp" -- The completion plugin
+  use "hrsh7th/cmp-buffer" -- buffer completions
+  use "hrsh7th/cmp-path" -- path completions
+  use "hrsh7th/cmp-cmdline" -- cmdline completions
+  use "saadparwaiz1/cmp_luasnip" -- snippet completions
+  use "hrsh7th/cmp-nvim-lsp" -- nvim-cmp source for neovim's built-in language server client
+  use "hrsh7th/cmp-nvim-lua" -- nvim-cmp source for neovim Lua API
+```
+
+### Snippets Plugins
+
+* [Link to L3MON4D3/LuaSnip docs](https://github.com/L3MON4D3/LuaSnip)
+* [Link to rafamadriz/friendly-snippets docs](https://github.com/rafamadriz/friendly-snippets)
+
+``` lua
+use("L3MON4D3/LuaSnip") --snippet engine
+use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
+```
+
+<hr/>
+
+## Bufferline
 
 #### Plugin
 
@@ -145,12 +181,12 @@ It also works with HTML
 [Link to Telescope docs](https://github.com/nvim-telescope/telescope.nvim)
 [Link to Telescope-fzf-native docs](https://github.com/nvim-telescope/telescope-fzf-native.nvim)
 
-``` lua
+```lua
   use {
   'nvim-telescope/telescope.nvim',
   requires = { {'nvim-lua/plenary.nvim'} }
 }
-  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' } 
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 ```
 
 <hr/>
@@ -159,7 +195,7 @@ It also works with HTML
 
 [Link to ToggleTerm docs](https://github.com/akinsho/toggleterm.nvim)
 
-``` lua
+```lua
   use {"akinsho/toggleterm.nvim"}
 ```
 
@@ -172,7 +208,7 @@ It also works with HTML
 [Link to nvim-treesitter-endwise docs](https://github.com/RRethy/nvim-treesitter-endwise)
 
 ```lua
- use 'nvim-treesitter/nvim-treesitter' 
+ use 'nvim-treesitter/nvim-treesitter'
  use 'nvim-treesitter/nvim-treesitter-refactor'
  use 'RRethy/nvim-treesitter-endwise'
 ```
