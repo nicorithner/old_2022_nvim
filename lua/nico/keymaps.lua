@@ -42,6 +42,6 @@ map("n", "<leader>fgit", "<cmd>Telescope git_files<CR>", opts)
 
 -- ToggleTerm
 map("n", "<leader>lg", "<cmd>lua _LAZYGIT_TOGGLE()<cr>", opts) -- q to exit
-map("n", "<leader>node", "<cmd>lua _NODE_TOGGLE()<cr>", opts) -- .exit to close
+map("n", "<leader>js", "<cmd>lua _NODE_TOGGLE()<cr>", opts) -- .exit to close
 map("n", "<leader>irb", "<cmd>lua _IRB_TOGGLE()<cr>", opts) -- exit to close, no leading dot.
 map("n", "<leader>ht", "<cmd>lua _HTOP_TOGGLE()<cr>", opts) -- q to exit
