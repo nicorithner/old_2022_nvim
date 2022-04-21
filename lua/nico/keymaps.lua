@@ -39,3 +39,9 @@ map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
 map("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
 map("n", "<leader>fo", "<cmd>Telescope oldfiles<cr>", opts)
 map("n", "<leader>fgit", "<cmd>Telescope git_files<CR>", opts)
+
+-- ToggleTerm
+map("n", "<leader>lg", "<cmd>lua _LAZYGIT_TOGGLE()<cr>", opts) -- q to exit
+map("n", "<leader>node", "<cmd>lua _NODE_TOGGLE()<cr>", opts) -- .exit to close
+map("n", "<leader>irb", "<cmd>lua _IRB_TOGGLE()<cr>", opts) -- exit to close, no leading dot.
+map("n", "<leader>ht", "<cmd>lua _HTOP_TOGGLE()<cr>", opts) -- q to exit

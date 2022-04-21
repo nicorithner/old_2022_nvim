@@ -20,11 +20,11 @@ I will try be detail but avoid re-writing here what already is in the files. The
 - [LSP and LSP Installer](#lsp-and-lsp-installer)
 - [Telescope](#telescope)
 - [Treesitter](#treesitter)
+- [ToggleTerm](#toggleterm)
 
 **TO-DO**
 
 - Autocompletion
-- Toggle term
 - Lazygit
 - colorizer (colors hex)
 - comment
@@ -151,6 +151,16 @@ It also works with HTML
   requires = { {'nvim-lua/plenary.nvim'} }
 }
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' } 
+```
+
+<hr/>
+
+## ToggleTerm
+
+[Link to ToggleTerm docs](https://github.com/akinsho/toggleterm.nvim)
+
+``` lua
+  use {"akinsho/toggleterm.nvim"}
 ```
 
 <hr/>
