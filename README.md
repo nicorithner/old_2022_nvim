@@ -21,14 +21,9 @@ I will try be detail but avoid re-writing here what already is in the files. The
 - [Telescope](#telescope)
 - [Treesitter](#treesitter)
 - [ToggleTerm](#toggleterm)
-- [ Autocompletion ](#autocompletion)
-
-**TO-DO**
-
-- Lazygit
-- colorizer (colors hex)
-- comment
-- [Trouble.nvim](https://github.com/folke/trouble.nvim)
+- [Autocompletion](#autocompletion)
+- [Vim-Hexokinase](#vim-hexokinase)
+- [Nvim-comment](#nvim-comment)
 
 <hr/>
 
@@ -93,6 +88,16 @@ use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
 
 <hr/>
 
+## Nvim-comment
+
+* [Link to terrortylor/nvim-comment docs](https://github.com/terrortylor/nvim-comment)
+
+``` lua
+use("terrortylor/nvim-comment") -- https://github.com/terrortylor/nvim-comment
+```
+
+<hr/>
+
 ## Gitsigns
 
 #### Plugins
@@ -107,6 +112,16 @@ use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
      'nvim-lua/plenary.nvim'
    }
  }
+```
+
+<hr/>
+
+## Vim-Hexokinase
+
+A color highlighter to help visualize color values in css and html files.
+
+``` lua
+use({ 'rrethy/vim-hexokinase', run = 'make hexokinase' } ) -- https://github.com/RRethy/vim-hexokinase
 ```
 
 <hr/>
