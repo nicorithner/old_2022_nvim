@@ -86,6 +86,9 @@ return packer.startup(function(use)
 		},
 	})
 
+  -- Indent Blank Line
+  use( "lukas-reineke/indent-blankline.nvim" )
+
 	-- vim-hexokinase
   use({ 'rrethy/vim-hexokinase', run = 'make hexokinase' } ) -- https://github.com/RRethy/vim-hexokinase
 
