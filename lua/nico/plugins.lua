@@ -18,8 +18,8 @@ end
 -- Autocommand that reloads neovim whenever you save the plugins.lua file
 vim.cmd([[
   augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+  autocmd!
+  autocmd BufWritePost plugins.lua source <afile> | PackerSync
   augroup end
 ]])
 
@@ -39,10 +39,9 @@ packer.init({
 })
 
 return packer.startup(function(use)
-
 	-- --------- Plugins without additional configuration
-  use("tpope/vim-fugitive") -- https://github.com/tpope/vim-fugitive
-  use("airblade/vim-gitgutter") -- https://github.com/airblade/vim-gitgutter
+	use("tpope/vim-fugitive") -- https://github.com/tpope/vim-fugitive
+	use("airblade/vim-gitgutter") -- https://github.com/airblade/vim-gitgutter
 	use({ "iamcco/markdown-preview.nvim", run = "cd app && yarn install" }) -- preview markdown
 	use("sbdchd/neoformat") -- formatter https://github.com/sbdchd/neoformahttps://github.com/sbdchd/neoformatt
 	use("kyazdani42/nvim-web-devicons") -- https://github.com/kyazdani42/nvim-web-devicons
@@ -78,8 +77,8 @@ return packer.startup(function(use)
 	-- Colorschemes
 	use("folke/tokyonight.nvim") -- https://github.com/folke/tokyonight.nvim
 
-  -- Comments
-  use("terrortylor/nvim-comment") -- https://github.com/terrortylor/nvim-comment
+	-- Comments
+	use("terrortylor/nvim-comment") -- https://github.com/terrortylor/nvim-comment
 
 	-- Gitsigns
 	use({
@@ -89,11 +88,11 @@ return packer.startup(function(use)
 		},
 	})
 
-  -- Indent Blank Line
-  use( "lukas-reineke/indent-blankline.nvim" )
+	-- Indent Blank Line
+	use("lukas-reineke/indent-blankline.nvim")
 
 	-- vim-hexokinase
-  use({ 'rrethy/vim-hexokinase', run = 'make hexokinase' } ) -- https://github.com/RRethy/vim-hexokinase
+	use({ "rrethy/vim-hexokinase", run = "make hexokinase" }) -- https://github.com/RRethy/vim-hexokinase
 
 	-- Lualine
 	use({
@@ -107,14 +106,14 @@ return packer.startup(function(use)
 	-- LSP (Language Server Protocol)
 	use("neovim/nvim-lspconfig") -- https://github.com/neovim/nvim-lspconfig
 	use("williamboman/nvim-lsp-installer") -- https://github.com/williamboman/nvim-lsp-installer
-  use("WhoIsSethDaniel/toggle-lsp-diagnostics.nvim") -- https://github.com/WhoIsSethDaniel/toggle-lsp-diagnostics.nvim
-  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters -- https://github.com/jose-elias-alvarez/null-ls.nvim
-  use "ray-x/lsp_signature.nvim" -- Show function signature when you type -- https://github.com/ray-x/lsp_signature.nvim
-  use "b0o/SchemaStore.nvim"
-  use {
-    "folke/trouble.nvim", -- https://github.com/folke/trouble.nvim
-    cmd = "TroubleToggle",
-  } -- A pretty list for showing diagnostics, references, telescope results, quickfix and location lists to help you solve all the trouble your code is causing.
+	use("WhoIsSethDaniel/toggle-lsp-diagnostics.nvim") -- https://github.com/WhoIsSethDaniel/toggle-lsp-diagnostics.nvim
+	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters -- https://github.com/jose-elias-alvarez/null-ls.nvim
+	use("ray-x/lsp_signature.nvim") -- Show function signature when you type -- https://github.com/ray-x/lsp_signature.nvim
+	use("b0o/SchemaStore.nvim")
+	use({
+		"folke/trouble.nvim", -- https://github.com/folke/trouble.nvim
+		cmd = "TroubleToggle",
+	}) -- A pretty list for showing diagnostics, references, telescope results, quickfix and location lists to help you solve all the trouble your code is causing.
 
 	-- Nvim-tree
 	use({
@@ -128,7 +127,7 @@ return packer.startup(function(use)
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- https://github.com/nvim-telescope/telescope-fzf-native.nvim
-  use { "nvim-telescope/telescope-file-browser.nvim" } -- https://github.com/nvim-telescope/telescope-file-browser.nvim
+	use({ "nvim-telescope/telescope-file-browser.nvim" }) -- https://github.com/nvim-telescope/telescope-file-browser.nvim
 
 	-- ToggleTerm
 	use({ "akinsho/toggleterm.nvim" }) -- https://github.com/akinsho/toggleterm.nvim
@@ -137,9 +136,6 @@ return packer.startup(function(use)
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }) -- https://github.com/nvim-treesitter/nvim-treesitter
 	use("nvim-treesitter/nvim-treesitter-refactor") -- https://github.com/nvim-treesitter/nvim-treesitter-refactor
 	use("RRethy/nvim-treesitter-endwise") -- https://github.com/RRethy/nvim-treesitter-endwise
-
-  -- Trouble
---  use("folke/trouble.nvim") -- https://github.com/folke/trouble.nvim
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
