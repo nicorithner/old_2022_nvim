@@ -98,9 +98,10 @@ return packer.startup(function(use)
 		},
 	})
 
-	-- Lsp
+	-- LSP (Language Server Protocol)
 	use("neovim/nvim-lspconfig") -- https://github.com/neovim/nvim-lspconfig
 	use("williamboman/nvim-lsp-installer") -- https://github.com/williamboman/nvim-lsp-installer
+  use("WhoIsSethDaniel/toggle-lsp-diagnostics.nvim") -- https://github.com/WhoIsSethDaniel/toggle-lsp-diagnostics.nvim
 
 	-- Nvim-tree
 	use({
