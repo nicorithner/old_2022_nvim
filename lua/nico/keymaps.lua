@@ -45,6 +45,7 @@ map("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
 map("n", "<leader>fo", "<cmd>Telescope oldfiles<cr>", opts)
 map("n", "<leader>fgit", "<cmd>Telescope git_files<cr>", opts)
 map("n", "<space>fb", "<cmd>Telescope file_browser<cr>", opts)
+map("n", "<space>fp", "<cmd>Telescope projects<cr>", opts)
 
 -- Toggle LSP Diagnostics
 map('n', '<Leader>dd', ':ToggleDiag<CR>', { noremap = true, silent = true })
