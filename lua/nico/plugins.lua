@@ -108,10 +108,10 @@ return packer.startup(function(use)
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters -- https://github.com/jose-elias-alvarez/null-ls.nvim
   use "ray-x/lsp_signature.nvim" -- Show function signature when you type -- https://github.com/ray-x/lsp_signature.nvim
   use "b0o/SchemaStore.nvim"
-  -- use {
-  --   "folke/trouble.nvim", -- https://github.com/folke/trouble.nvim
-  --   cmd = "TroubleToggle",
-  -- } -- A pretty list for showing diagnostics, references, telescope results, quickfix and location lists to help you solve all the trouble your code is causing.
+  use {
+    "folke/trouble.nvim", -- https://github.com/folke/trouble.nvim
+    cmd = "TroubleToggle",
+  } -- A pretty list for showing diagnostics, references, telescope results, quickfix and location lists to help you solve all the trouble your code is causing.
 
 	-- Nvim-tree
 	use({
