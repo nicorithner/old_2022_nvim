@@ -25,6 +25,7 @@ I will try be detail but avoid re-writing here what already is in the files. The
 - [Vim-Hexokinase](#vim-hexokinase)
 - [Nvim-comment](#nvim-comment)
 - [Toggle-LSP-Diagnostics](#toggle-lsp-diagnostics)
+- [Indent Blank Line](#indent-blank-line)
 
 <hr/>
 
@@ -32,13 +33,13 @@ I will try be detail but avoid re-writing here what already is in the files. The
 
 ### CMP Plugins
 
-* [Link to hrsh7th/nvim-cmp docs](https://github.com/hrsh7th/nvim-cmp)
-* [Link to hrsh7th/cmp-buffer docs](https://github.com/hrsh7th/cmp-buffer)
-* [Link to hrsh7th/cmp-path docs](https://github.com/hrsh7th/cmp-path)
-* [Link to hrsh7th/cmp-cmdline docs](https://github.com/hrsh7th/cmp-cmdline)
-* [Link to saadparwaiz1/cmp_luasnip docs](https://github.com/saadparwaiz1/cmp_luasnip)
-* [Link to hrsh7th/cmp-nvim-lsp docs](https://github.com/hrsh7th/cmp-nvim-lsp)
-* [Link to hrsh7th/cmp-nvim-lua docs](https://github.com/hrsh7th/cmp-nvim-lua)
+- [Link to hrsh7th/nvim-cmp docs](https://github.com/hrsh7th/nvim-cmp)
+- [Link to hrsh7th/cmp-buffer docs](https://github.com/hrsh7th/cmp-buffer)
+- [Link to hrsh7th/cmp-path docs](https://github.com/hrsh7th/cmp-path)
+- [Link to hrsh7th/cmp-cmdline docs](https://github.com/hrsh7th/cmp-cmdline)
+- [Link to saadparwaiz1/cmp_luasnip docs](https://github.com/saadparwaiz1/cmp_luasnip)
+- [Link to hrsh7th/cmp-nvim-lsp docs](https://github.com/hrsh7th/cmp-nvim-lsp)
+- [Link to hrsh7th/cmp-nvim-lua docs](https://github.com/hrsh7th/cmp-nvim-lua)
 
 ```lua
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -52,10 +53,10 @@ I will try be detail but avoid re-writing here what already is in the files. The
 
 ### Snippets Plugins
 
-* [Link to L3MON4D3/LuaSnip docs](https://github.com/L3MON4D3/LuaSnip)
-* [Link to rafamadriz/friendly-snippets docs](https://github.com/rafamadriz/friendly-snippets)
+- [Link to L3MON4D3/LuaSnip docs](https://github.com/L3MON4D3/LuaSnip)
+- [Link to rafamadriz/friendly-snippets docs](https://github.com/rafamadriz/friendly-snippets)
 
-``` lua
+```lua
 use("L3MON4D3/LuaSnip") --snippet engine
 use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
 ```
@@ -91,9 +92,9 @@ use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
 
 ## Nvim-comment
 
-* [Link to terrortylor/nvim-comment docs](https://github.com/terrortylor/nvim-comment)
+- [Link to terrortylor/nvim-comment docs](https://github.com/terrortylor/nvim-comment)
 
-``` lua
+```lua
 use("terrortylor/nvim-comment") -- https://github.com/terrortylor/nvim-comment
 ```
 
@@ -117,12 +118,22 @@ use("terrortylor/nvim-comment") -- https://github.com/terrortylor/nvim-comment
 
 <hr/>
 
-## Vim-Hexokinase
+## Hexokinase
 
 A color highlighter to help visualize color values in css and html files.
 
-``` lua
+```lua
 use({ 'rrethy/vim-hexokinase', run = 'make hexokinase' } ) -- https://github.com/RRethy/vim-hexokinase
+```
+
+<hr/>
+
+## Indent Blank Line
+
+[Link to indent-blankline.nvim docs](https://github.com/lukas-reineke/indent-blankline.nvim)
+
+```lua
+use("lukas-reineke/indent-blankline.nvim")
 ```
 
 <hr/>
@@ -213,7 +224,7 @@ A plugin to toggle LSP diagnostics on or off. On by default
 
 [Link to WhoIsSethDaniel/toggle-lsp-diagnostics.nvim docs](https://github.com/WhoIsSethDaniel/toggle-lsp-diagnostics.nvim)
 
-``` lua
+```lua
 use("WhoIsSethDaniel/toggle-lsp-diagnostics.nvim")
 ```
 
