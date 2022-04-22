@@ -26,6 +26,7 @@ I will try be detail but avoid re-writing here what already is in the files. The
 - [Nvim-comment](#nvim-comment)
 - [Toggle-LSP-Diagnostics](#toggle-lsp-diagnostics)
 - [Indent Blank Line](#indent-blank-line)
+- [Project.nvim](#project.nvim)
 
 <hr/>
 
@@ -172,16 +173,27 @@ Even though LSP (Language Server Protocol) is native in Neovim it requires quite
 Use this guide [LSP-Guide]('/lua/nico/lsp/how-to-lsp.md')
 
 ```lua
-use 'neovim/nvim-lspconfig'
-use 'williamboman/nvim-lsp-installer'
+use('neovim/nvim-lspconfig')
+use('williamboman/nvim-lsp-installer')
+```
+<hr/>
+
+## Project.nvim
+
+[Link to ahmedkhalf/project.nvim docs](https://github.com/ahmedkhalf/project.nvim)
+
+``` lua
+use("ahmedkhalf/project.nvim")
 ```
 
-### Vim-Surround
+<hr/>
+
+## Vim-Surround
 
 [vim-surround](https://github.com/tpope/vim-surround)
 
 ```lua
-  use "tpope/vim-surround"
+use("tpope/vim-surround")
 ```
 
 ### Key bindings
