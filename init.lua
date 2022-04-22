@@ -12,8 +12,6 @@ end
 require('nico.autopairs')
 require('nico.bufferline')
 require('nico.cmp')
-require('nico.colour')
-require('nico.colorizer')
 require('nico.colorscheme')
 require('nico.commands')
 require('nico.comment')
@@ -25,10 +23,10 @@ require('nico.lsp.lsp-config')
 require('nico.nvim-tree')
 require('nico.options')
 require('nico.plugins')
+require('nico.telescope')
 require('nico.treesitter')
 require('nico.toggleTerm')
 require('nico.toggle_lsp_diagnostics')
-require('nico.telescope')
 
 -- CpHelper config
 vim.g.cphdir = os.getenv( 'HOME' )..'/problems'
