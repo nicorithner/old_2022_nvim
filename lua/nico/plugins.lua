@@ -75,6 +75,9 @@ return packer.startup(function(use)
 	-- Colorschemes
 	use("folke/tokyonight.nvim") -- https://github.com/folke/tokyonight.nvim
 
+  -- Comments
+  use("terrortylor/nvim-comment") -- https://github.com/terrortylor/nvim-comment
+
 	-- Gitsigns
 	use({
 		"lewis6991/gitsigns.nvim", -- https://github.com/lewis6991/gitsigns.nvim
@@ -82,6 +85,9 @@ return packer.startup(function(use)
 			"nvim-lua/plenary.nvim",
 		},
 	})
+
+	-- vim-hexokinase
+  use({ 'rrethy/vim-hexokinase', run = 'make hexokinase' } ) -- https://github.com/RRethy/vim-hexokinase
 
 	-- Lualine
 	use({
@@ -116,6 +122,9 @@ return packer.startup(function(use)
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }) -- https://github.com/nvim-treesitter/nvim-treesitter
 	use("nvim-treesitter/nvim-treesitter-refactor") -- https://github.com/nvim-treesitter/nvim-treesitter-refactor
 	use("RRethy/nvim-treesitter-endwise") -- https://github.com/RRethy/nvim-treesitter-endwise
+
+  -- Trouble
+--  use("folke/trouble.nvim") -- https://github.com/folke/trouble.nvim
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
