@@ -24,6 +24,7 @@ I will try be detail but avoid re-writing here what already is in the files. The
 - [Autocompletion](#autocompletion)
 - [Vim-Hexokinase](#vim-hexokinase)
 - [Nvim-comment](#nvim-comment)
+- [Toggle-LSP-Diagnostics](#toggle-lsp-diagnostics)
 
 <hr/>
 
@@ -202,6 +203,18 @@ It also works with HTML
   requires = { {'nvim-lua/plenary.nvim'} }
 }
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+```
+
+<hr/>
+
+## Toggle LSP Diagnostics
+
+A plugin to toggle LSP diagnostics on or off. On by default
+
+[Link to WhoIsSethDaniel/toggle-lsp-diagnostics.nvim docs](https://github.com/WhoIsSethDaniel/toggle-lsp-diagnostics.nvim)
+
+``` lua
+use("WhoIsSethDaniel/toggle-lsp-diagnostics.nvim")
 ```
 
 <hr/>
