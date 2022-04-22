@@ -43,7 +43,8 @@ map("n", "<leader>n", ":NvimTreeToggle<cr>", opts)
 map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
 map("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
 map("n", "<leader>fo", "<cmd>Telescope oldfiles<cr>", opts)
-map("n", "<leader>fgit", "<cmd>Telescope git_files<CR>", opts)
+map("n", "<leader>fgit", "<cmd>Telescope git_files<cr>", opts)
+map("n", "<space>fb", "<cmd>Telescope file_browser<cr>", opts)
 
 -- Toggle LSP Diagnostics
 map('n', '<Leader>dd', ':ToggleDiag<CR>', { noremap = true, silent = true })
