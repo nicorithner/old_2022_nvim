@@ -39,15 +39,17 @@ packer.init({
 })
 
 return packer.startup(function(use)
-	-- Plugins without additional configuration
+
+	-- --------- Plugins without additional configuration
+  use("airblade/vim-gitgutter")
 	use({ "iamcco/markdown-preview.nvim", run = "cd app && yarn install" }) -- preview markdown
 	use("sbdchd/neoformat") -- formatter https://github.com/sbdchd/neoformahttps://github.com/sbdchd/neoformatt
 	use("kyazdani42/nvim-web-devicons") -- https://github.com/kyazdani42/nvim-web-devicons
 	use("wbthomason/packer.nvim") -- Have packer manage itself
 	use("nvim-lua/plenary.nvim") -- https://github.com/nvim-lua/plenary.nvim
 	use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
-	use("wakatime/vim-wakatime") -- wakatime tracks my activity in https://wakatime.com/dashboard
 	use("tpope/vim-surround") -- changes surrounding quotes or brackets and more. https://github.com/tpope/vim-surround
+	use("wakatime/vim-wakatime") -- wakatime tracks my activity in https://wakatime.com/dashboard
 
 	-- Autocompletion - CMP plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin -- https://github.com/hrsh7th/nvim-cmp
