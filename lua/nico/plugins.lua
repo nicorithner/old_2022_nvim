@@ -41,7 +41,8 @@ packer.init({
 return packer.startup(function(use)
 
 	-- --------- Plugins without additional configuration
-  use("airblade/vim-gitgutter")
+  use("tpope/vim-fugitive") -- https://github.com/tpope/vim-fugitive
+  use("airblade/vim-gitgutter") -- https://github.com/airblade/vim-gitgutter
 	use({ "iamcco/markdown-preview.nvim", run = "cd app && yarn install" }) -- preview markdown
 	use("sbdchd/neoformat") -- formatter https://github.com/sbdchd/neoformahttps://github.com/sbdchd/neoformatt
 	use("kyazdani42/nvim-web-devicons") -- https://github.com/kyazdani42/nvim-web-devicons
