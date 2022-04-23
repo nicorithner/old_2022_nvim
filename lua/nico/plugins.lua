@@ -121,9 +121,6 @@ return packer.startup(function(use)
 		requires = "kyazdani42/nvim-web-devicons",
 	})
 
-  -- Project.nvim
-  use( "ahmedkhalf/project.nvim" )
-
 	-- Telescope
 	use({
 		"nvim-telescope/telescope.nvim", -- https://github.com/nvim-telescope/telescope.nvim

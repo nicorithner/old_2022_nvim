@@ -26,7 +26,6 @@ I will try be detail but avoid re-writing here what already is in the files. The
 - [Nvim-comment](#nvim-comment)
 - [Toggle-LSP-Diagnostics](#toggle-lsp-diagnostics)
 - [Indent Blank Line](#indent-blank-line)
-- [Project.nvim](#project.nvim)
 
 <hr/>
 
@@ -176,16 +175,6 @@ Use this guide [LSP-Guide]('/lua/nico/lsp/how-to-lsp.md')
 use('neovim/nvim-lspconfig')
 use('williamboman/nvim-lsp-installer')
 ```
-<hr/>
-
-## Project.nvim
-
-[Link to ahmedkhalf/project.nvim docs](https://github.com/ahmedkhalf/project.nvim)
-
-``` lua
-use("ahmedkhalf/project.nvim")
-```
-
 <hr/>
 
 ## Vim-Surround
