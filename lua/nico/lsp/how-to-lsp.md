@@ -85,9 +85,7 @@ this config replaces the lsp.config set up but.
 
 [reddit article about changes dated april 17 2022](https://www.reddit.com/r/neovim/comments/u5si2w/breaking_changes_inbound_next_few_weeks_for/)
 
+How about this plugin?
 ```lua
- use 'hrsh7th/vim-vsnip' -- https://github.com/hrsh7th/vim-vsnip
- use 'hrsh7th/nvim-cmp' -- https://github.com/hrsh7th/nvim-cmp
- use 'hrsh7th/cmp-nvim-lsp' -- https://github.com/hrsh7th/cmp-nvim-lsp
  use 'onsails/lspkind-nvim' -- https://github.com/onsails/lspkind-nvim . This tiny plugin adds vscode-like pictograms to neovim built-in lsp
 ```
