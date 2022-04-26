@@ -88,6 +88,9 @@ return packer.startup(function(use)
 		},
 	})
 
+  -- Illuminate
+  use "RRethy/vim-illuminate" -- https://github.com/RRethy/vim-illuminate
+
 	-- Indent Blank Line
 	use("lukas-reineke/indent-blankline.nvim")
 
