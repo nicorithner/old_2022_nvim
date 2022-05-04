@@ -58,4 +58,4 @@ map('n', '<leader>di', '<Plug>(toggle-lsp-diag-update_in_insert)', {silent = tru
 map("n", "<leader>lg", "<cmd>lua _LAZYGIT_TOGGLE()<cr>", opts) -- q to exit
 map("n", "<leader>js", "<cmd>lua _NODE_TOGGLE()<cr>", opts) -- .exit to close
 map("n", "<leader>irb", "<cmd>lua _IRB_TOGGLE()<cr>", opts) -- exit to close, no leading dot.
-map("n", "<leader>ht", "<cmd>lua _HTOP_TOGGLE()<cr>", opts) -- q to exit
+map("n", "<leader>rc", "<cmd>lua _RAILS_CONSOLE_TOGGLE()<cr>", opts) -- q to exit

@@ -58,8 +58,8 @@ function _IRB_TOGGLE()
 	irb:toggle()
 end
 
-local htop = Terminal:new({ cmd = "htop", hidden = true, direction = 'float' })
+local rc = Terminal:new({ cmd = "rails c", hidden = true, direction = 'float' })
 
-function _HTOP_TOGGLE()
-	htop:toggle()
+function _RAILS_CONSOLE_TOGGLE()
+	rc:toggle()
 end
