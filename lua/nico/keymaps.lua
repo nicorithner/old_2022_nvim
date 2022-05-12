@@ -45,7 +45,6 @@ map("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
 map("n", "<leader>fo", "<cmd>Telescope oldfiles<cr>", opts)
 map("n", "<leader>fgit", "<cmd>Telescope git_files<cr>", opts)
 map("n", "<space>fb", "<cmd>Telescope file_browser<cr>", opts)
-map("n", "<space>fp", "<cmd>Telescope projects<cr>", opts)
 
 -- Toggle LSP Diagnostics
 map('n', '<Leader>dd', ':ToggleDiag<CR>', { noremap = true, silent = true })
@@ -58,4 +57,4 @@ map('n', '<leader>di', '<Plug>(toggle-lsp-diag-update_in_insert)', {silent = tru
 map("n", "<leader>lg", "<cmd>lua _LAZYGIT_TOGGLE()<cr>", opts) -- q to exit
 map("n", "<leader>js", "<cmd>lua _NODE_TOGGLE()<cr>", opts) -- .exit to close
 map("n", "<leader>irb", "<cmd>lua _IRB_TOGGLE()<cr>", opts) -- exit to close, no leading dot.
-map("n", "<leader>ht", "<cmd>lua _HTOP_TOGGLE()<cr>", opts) -- q to exit
+map("n", "<leader>rc", "<cmd>lua _RAILS_C()<cr>", opts) -- q to exit
