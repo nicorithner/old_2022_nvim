@@ -58,15 +58,8 @@ function _IRB_TOGGLE()
 	irb:toggle()
 end
 
-<<<<<<< HEAD
-local railsConsole = Terminal:new({ cmd = "rails c", hidden = true, direction = 'float' })
-
-function _RAILS_C()
-	railsConsole:toggle()
-=======
 local rc = Terminal:new({ cmd = "rails c", hidden = true, direction = 'float' })
 
 function _RAILS_CONSOLE_TOGGLE()
 	rc:toggle()
->>>>>>> 5b5ff89c6122000e0e6508aed730ef951b0a77e1
 end
