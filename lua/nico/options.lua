@@ -35,6 +35,8 @@ local options = {
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
 }
 
+vim.g.ruby_host_prog = 'rvm system do neovim-ruby-host'
+
 vim.opt.shortmess:append "c"
 
 for k, v in pairs(options) do
