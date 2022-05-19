@@ -1,7 +1,7 @@
 require'lualine'.setup {
   options = {
     icons_enabled = true,
-    theme = 'tokyonight',
+    theme = 'github_dark',
   },
   sections = {
     lualine_a = {'mode'},

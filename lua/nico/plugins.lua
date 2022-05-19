@@ -75,7 +75,8 @@ return packer.startup(function(use)
 	})
 
 	-- Colorschemes
-	use("folke/tokyonight.nvim") -- https://github.com/folke/tokyonight.nvim
+	-- use("folke/tokyonight.nvim") -- https://github.com/folke/tokyonight.nvim
+  use "projekt0n/github-nvim-theme" -- https://github.com/projekt0n/github-nvim-theme
 
 	-- Comments
 	use("terrortylor/nvim-comment") -- https://github.com/terrortylor/nvim-comment
