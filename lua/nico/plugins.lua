@@ -134,7 +134,7 @@ return packer.startup(function(use)
 	use({ "nvim-telescope/telescope-file-browser.nvim" }) -- https://github.com/nvim-telescope/telescope-file-browser.nvim
 
 	-- ToggleTerm
-	use({ "akinsho/toggleterm.nvim" }) -- https://github.com/akinsho/toggleterm.nvim
+	use({ "akinsho/toggleterm.nvim", tag = 'v1.*' }) -- https://github.com/akinsho/toggleterm.nvim
 
 	-- Treesitter
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }) -- https://github.com/nvim-treesitter/nvim-treesitter
