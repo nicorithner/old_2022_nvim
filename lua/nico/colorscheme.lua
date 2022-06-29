@@ -19,7 +19,7 @@
 
 -- Github-theme setup -- https://github.com/projekt0n/github-nvim-theme
 require('github-theme').setup({
-  theme_style = "dark_default",
+  theme_style = "dark",
   function_style = "italic",
   sidebars = {"qf", "vista_kind", "terminal", "packer"},
 
