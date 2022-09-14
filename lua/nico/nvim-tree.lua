@@ -24,7 +24,7 @@ require("nvim-tree").setup({ -- BEGIN_DEFAULT_OPTS
 		hide_root_folder = false,
 		side = "left",
 		preserve_window_proportions = false,
-		number = false,
+		number = true,
 		relativenumber = false,
 		signcolumn = "yes",
 		mappings = {
@@ -118,7 +118,6 @@ require("nvim-tree").setup({ -- BEGIN_DEFAULT_OPTS
 	},
 	filesystem_watchers = {
 		enable = false,
-		interval = 100,
 		debounce_delay = 50,
 	},
 	git = {
