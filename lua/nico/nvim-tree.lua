@@ -7,7 +7,7 @@ require("nvim-tree").setup({ -- BEGIN_DEFAULT_OPTS
 	hijack_netrw = true,
 	hijack_unnamed_buffer_when_opening = false,
 	ignore_buffer_on_setup = false,
-	open_on_setup = false,
+	open_on_setup = true,
 	open_on_setup_file = false,
 	open_on_tab = false,
 	sort_by = "name",
@@ -19,8 +19,7 @@ require("nvim-tree").setup({ -- BEGIN_DEFAULT_OPTS
 	view = {
 		adaptive_size = false,
 		centralize_selection = false,
-		width = 30,
-		height = 30,
+		width = 50,
 		hide_root_folder = false,
 		side = "left",
 		preserve_window_proportions = false,
@@ -33,6 +32,17 @@ require("nvim-tree").setup({ -- BEGIN_DEFAULT_OPTS
 				-- user mappings go here
 			},
 		},
+		float = {
+			enable = false,
+			open_win_config = {
+				relative = "editor",
+				border = "rounded",
+				width = 30,
+				height = 30,
+				row = 1,
+				col = 1,
+			},
+		},
 	},
 	renderer = {
 		add_trailing = false,
@@ -43,10 +53,12 @@ require("nvim-tree").setup({ -- BEGIN_DEFAULT_OPTS
 		root_folder_modifier = ":~",
 		indent_markers = {
 			enable = false,
+			inline_arrows = true,
 			icons = {
 				corner = "└ ",
 				edge = "│ ",
 				item = "│ ",
+				bottom = "-",
 				none = "  ",
 			},
 		},
@@ -123,6 +135,7 @@ require("nvim-tree").setup({ -- BEGIN_DEFAULT_OPTS
 	git = {
 		enable = true,
 		ignore = true,
+		show_on_dirs = true,
 		timeout = 400,
 	},
 	actions = {
@@ -134,6 +147,16 @@ require("nvim-tree").setup({ -- BEGIN_DEFAULT_OPTS
 		},
 		expand_all = {
 			max_folder_discovery = 300,
+			exclude = {},
+		},
+		file_popup = {
+			open_win_config = {
+				col = 1,
+				row = 1,
+				relative = "cursor",
+				border = "shadow",
+				style = "minimal",
+			},
 		},
 		open_file = {
 			quit_on_open = false,
@@ -166,6 +189,7 @@ require("nvim-tree").setup({ -- BEGIN_DEFAULT_OPTS
 			all = false,
 			config = false,
 			copy_paste = false,
+      dev = false,
 			diagnostics = false,
 			git = false,
 			profile = false,
