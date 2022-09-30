@@ -76,7 +76,7 @@ return packer.startup(function(use)
 
 	-- Colorschemes
 	-- use("folke/tokyonight.nvim") -- https://github.com/folke/tokyonight.nvim
-  use "projekt0n/github-nvim-theme" -- https://github.com/projekt0n/github-nvim-theme
+	use("projekt0n/github-nvim-theme") -- https://github.com/projekt0n/github-nvim-theme
 
 	-- Comments
 	use("terrortylor/nvim-comment") -- https://github.com/terrortylor/nvim-comment
@@ -89,8 +89,8 @@ return packer.startup(function(use)
 		},
 	})
 
-  -- Illuminate
-  use "RRethy/vim-illuminate" -- https://github.com/RRethy/vim-illuminate
+	-- Illuminate
+	use("RRethy/vim-illuminate") -- https://github.com/RRethy/vim-illuminate
 
 	-- Indent Blank Line
 	use("lukas-reineke/indent-blankline.nvim")
@@ -108,6 +108,10 @@ return packer.startup(function(use)
 	})
 
 	-- LSP (Language Server Protocol)
+	use({
+		"williamboman/mason.nvim",
+		"williamboman/mason-lspconfig.nvim",
+	})
 	use("neovim/nvim-lspconfig") -- https://github.com/neovim/nvim-lspconfig
 	use("williamboman/nvim-lsp-installer") -- https://github.com/williamboman/nvim-lsp-installer
 	use("WhoIsSethDaniel/toggle-lsp-diagnostics.nvim") -- https://github.com/WhoIsSethDaniel/toggle-lsp-diagnostics.nvim
@@ -134,7 +138,7 @@ return packer.startup(function(use)
 	use({ "nvim-telescope/telescope-file-browser.nvim" }) -- https://github.com/nvim-telescope/telescope-file-browser.nvim
 
 	-- ToggleTerm
-	use({ "akinsho/toggleterm.nvim", tag = 'v1.*' }) -- https://github.com/akinsho/toggleterm.nvim
+	use({ "akinsho/toggleterm.nvim", tag = "v1.*" }) -- https://github.com/akinsho/toggleterm.nvim
 
 	-- Treesitter
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }) -- https://github.com/nvim-treesitter/nvim-treesitter
