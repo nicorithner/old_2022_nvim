@@ -11,6 +11,8 @@ if not snip_status_ok then
 end
 
 require("luasnip/loaders/from_vscode").lazy_load()
+require('luasnip').filetype_extend("javascript", { "javascriptreact", "html" })
+require'luasnip'.filetype_extend("ruby", {"rails"})
 
 local check_backspace = function()
 	local col = vim.fn.col(".") - 1
@@ -104,9 +106,9 @@ cmp.setup({
 	-- sources = {
 	sources = cmp.config.sources({
 		{ name = "buffer" },
+		{ name = "luasnip" },
 		{ name = "nvim_lsp" },
 		{ name = "nvim_lua" },
-		{ name = "luasnip" },
 		{ name = "path" },
 	}),
 	confirm_opts = {
