@@ -11,7 +11,7 @@ if not snip_status_ok then
 end
 
 require("luasnip/loaders/from_vscode").lazy_load()
-require('luasnip').filetype_extend("javascript", { "javascriptreact", "html" })
+require('luasnip').filetype_extend("javascript", { "javascriptreact" })
 require'luasnip'.filetype_extend("ruby", {"rails"})
 
 local check_backspace = function()
@@ -19,7 +19,6 @@ local check_backspace = function()
 	return col == 0 or vim.fn.getline("."):sub(col, col):match("%s")
 end
 
--- Ôóè Ôö® Ô≠Ñ ÔØü Ôëè Ôô± some other good icons
 local kind_icons = {
   Text = "",
 	Method = "m",
