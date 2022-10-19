@@ -47,12 +47,13 @@ return packer.startup(function(use)
 
 	-- Autocompletion
 	use("hrsh7th/nvim-cmp") -- The completion plugin -- https://github.com/hrsh7th/nvim-cmp
-	use("hrsh7th/cmp-buffer") -- buffer completions -- https://github.com/hrsh7th/cmp-buffer
-	use("hrsh7th/cmp-path") -- path completions -- https://github.com/hrsh7th/cmp-path
-	use("hrsh7th/cmp-cmdline") -- cmdline completions -- https://github.com/hrsh7th/cmp-cmdline
+	use({ "hrsh7th/cmp-nvim-lua", after = "nvim-cmp" }) -- nvim-cmp source for neovim Lua API -- https://github.com/hrsh7th/cmp-nvim-lua
+	use({ "hrsh7th/cmp-nvim-lsp", after = "cmp-nvim-lua" }) -- nvim-cmp source for neovim's built-in language server client. -- https://github.com/hrsh7th/cmp-nvim-lsp
+	use({ "hrsh7th/cmp-buffer", after = "cmp-nvim-lsp" }) -- buffer completions -- https://github.com/hrsh7th/cmp-buffer
+	use({ "hrsh7th/cmp-path", after = "cmp-buffer" }) -- path completions -- https://github.com/hrsh7th/cmp-path
+	use({ "hrsh7th/cmp-cmdline", after = "cmp-path" }) -- cmdline completions -- https://github.com/hrsh7th/cmp-cmdline
+	use({ "hrsh7th/cmp-calc", after = "cmp-cmdline" })
 	use("saadparwaiz1/cmp_luasnip") -- snippet completions -- https://github.com/saadparwaiz1/cmp_luasnip
-	use("hrsh7th/cmp-nvim-lsp") -- nvim-cmp source for neovim's built-in language server client. -- https://github.com/hrsh7th/cmp-nvim-lsp
-	use("hrsh7th/cmp-nvim-lua") -- nvim-cmp source for neovim Lua API -- https://github.com/hrsh7th/cmp-nvim-lua
 
 	-- Autocompletion Snippets
 	use("L3MON4D3/LuaSnip") --snippet engine -- https://github.com/L3MON4D3/LuaSnip
