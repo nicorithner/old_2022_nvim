@@ -1,15 +1,28 @@
 -- -- Guide to default actions: https://github.com/kyazdani42/nvim-tree.lua#default-actions
-require("nvim-tree").setup({ -- BEGIN_DEFAULT_OPTS
+
+local status_ok, nvim_tree = pcall(require, "nvim-tree")
+if not status_ok then
+	return
+end
+
+local config_status_ok, nvim_tree_config = pcall(require, "nvim-tree.config")
+if not config_status_ok then
+	return
+end
+
+local tree_cb = nvim_tree_config.nvim_tree_callback
+
+nvim_tree.setup({ -- BEGIN_DEFAULT_OPTS
 	auto_reload_on_write = true,
 	create_in_closed_folder = false,
-	disable_netrw = false,
+	disable_netrw = true,
 	hijack_cursor = false,
 	hijack_netrw = true,
 	hijack_unnamed_buffer_when_opening = false,
 	ignore_buffer_on_setup = false,
 	open_on_setup = true,
 	open_on_setup_file = false,
-	open_on_tab = false,
+	open_on_tab = true,
 	sort_by = "name",
 	root_dirs = {},
 	prefer_startup_root = false,
@@ -19,7 +32,7 @@ require("nvim-tree").setup({ -- BEGIN_DEFAULT_OPTS
 	view = {
 		adaptive_size = false,
 		centralize_selection = false,
-		width = 50,
+		width = 35,
 		hide_root_folder = false,
 		side = "left",
 		preserve_window_proportions = false,
@@ -114,8 +127,8 @@ require("nvim-tree").setup({ -- BEGIN_DEFAULT_OPTS
 		args = {},
 	},
 	diagnostics = {
-		enable = false,
-		show_on_dirs = false,
+		enable = true,
+		show_on_dirs = true,
 		icons = {
 			hint = "",
 			info = "",
@@ -189,7 +202,7 @@ require("nvim-tree").setup({ -- BEGIN_DEFAULT_OPTS
 			all = false,
 			config = false,
 			copy_paste = false,
-      dev = false,
+			dev = false,
 			diagnostics = false,
 			git = false,
 			profile = false,
