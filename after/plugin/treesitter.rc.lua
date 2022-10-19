@@ -2,24 +2,29 @@ local status_ok, configs = pcall(require, "nvim-treesitter.configs")
 if not status_ok then
 	return
 end
--- include treesitter and its config
+
 configs.setup({
 
 	ensure_installed = {
-		"ruby",
-		"c",
-		"cpp",
-		"python",
-		"lua",
-		"typescript",
-		"regex",
 		"bash",
+		"c",
 		"cmake",
-		"css",
-		"javascript",
-		"html",
 		"comment",
+		"cpp",
+		"css",
+		"fish",
+		"html",
+		"javascript",
 		"java",
+		"lua",
+		"php",
+		"python",
+		"regex",
+		"ruby",
+		"toml",
+		"tsx",
+		"typescript",
+		"yaml",
 	},
 	highlight = {
 		enable = true,
@@ -64,3 +69,6 @@ configs.setup({
 		},
 	},
 })
+
+local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
+parser_config.tsx.filetype_to_parsername = { "javascript", "typescript.tsx" }
