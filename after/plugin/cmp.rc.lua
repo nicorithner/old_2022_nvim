@@ -3,7 +3,7 @@ if not cmp_status_ok then
 	return
 end
 
-local lspkind = require 'lspkind'
+local lspkind = require("lspkind")
 
 local snip_status_ok, luasnip = pcall(require, "luasnip")
 if not snip_status_ok then
@@ -11,8 +11,9 @@ if not snip_status_ok then
 end
 
 require("luasnip/loaders/from_vscode").lazy_load()
-require('luasnip').filetype_extend("javascript", { "javascriptreact" })
-require'luasnip'.filetype_extend("ruby", {"rails"})
+require("luasnip.loaders.from_snipmate").lazy_load()
+require("luasnip").filetype_extend("javascript", { "javascriptreact" })
+require("luasnip").filetype_extend("ruby", { "rails" })
 
 local check_backspace = function()
 	local col = vim.fn.col(".") - 1
@@ -20,7 +21,7 @@ local check_backspace = function()
 end
 
 local kind_icons = {
-  Text = "",
+	Text = "",
 	Method = "m",
 	Function = "",
 	Constructor = "",
@@ -100,15 +101,15 @@ cmp.setup({
 		}),
 	}),
 	formatting = {
-		format = lspkind.cmp_format({ with_text = false, maxwidth = 50 }),
+		format = lspkind.cmp_format({ with_text = true, maxwidth = 50 }),
 	},
 	-- sources = {
 	sources = cmp.config.sources({
-		{ name = "buffer" },
 		{ name = "luasnip" },
 		{ name = "nvim_lsp" },
-		{ name = "nvim_lua" },
 		{ name = "path" },
+		{ name = "buffer" },
+		{ name = "nvim_lua" },
 	}),
 	confirm_opts = {
 		behavior = cmp.ConfirmBehavior.Replace,
