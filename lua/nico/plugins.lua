@@ -101,6 +101,7 @@ return packer.startup(function(use)
 		"folke/trouble.nvim", -- https://github.com/folke/trouble.nvim
 		cmd = "TroubleToggle",
 	}) -- A pretty list for showing diagnostics, references, telescope results, quickfix and location lists to help you solve all the trouble your code is causing.
+	use("ray-x/lsp_signature.nvim") -- Show function signature when you type -- https://github.com/ray-x/lsp_signature.nvim
 
 	-- Lualine
 	use("nvim-lualine/lualine.nvim") -- https://github.com/nvim-lualine/lualine.nvim
@@ -131,6 +132,8 @@ return packer.startup(function(use)
 			require("nvim-treesitter.install").update({ with_sync = true })
 		end,
 	})
+	use("nvim-treesitter/nvim-treesitter-refactor") -- https://github.com/nvim-treesitter/nvim-treesitter-refactor
+	use("RRethy/nvim-treesitter-endwise") -- https://github.com/RRethy/nvim-treesitter-endwise
 
 	---------------------- *** ------------------------ *** ------------------------ *** -------------------------
 
