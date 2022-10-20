@@ -58,6 +58,7 @@ return packer.startup(function(use)
 	-- Autocompletion Snippets
 	use("L3MON4D3/LuaSnip") --snippet engine -- https://github.com/L3MON4D3/LuaSnip
 	use("rafamadriz/friendly-snippets") -- a bunch of snippets to use -- https://github.com/rafamadriz/friendly-snippets
+	use("honza/vim-snippets") -- https://github.com/honza/vim-snippets
 
 	-- Autopairs
 	use("windwp/nvim-autopairs") -- https://github.com/windwp/nvim-autopairs
